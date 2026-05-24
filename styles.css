@@ -6,15 +6,22 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 300;
+  font-size: 17px;
   line-height: 1.5;
+  background-color: #e2e2e2;
 
   --primary-text-color: #181820;
-  --secondary-text-color: #5c5c62;
-  --durability-text-color: #6a737d9c;
+  --secondary-text-color: #020304;
+  --durability-text-color: #5d5959f8;
   --icon-color: #6a737d;
-  --border-color: #ff9a0045;
-  --text-decoration-color: #ff9a00;
+  --border-color: #2d2e30;
+  --text-decoration-color: #2d2e30;
+  --seconary-background-color: #dadbdd;
+  --border-shadow: 0 10px 20px rgb(0 0 0/8%), 0 6px 6px rgb(0 0 0/10%);
+  --primary-header-font-family: "Red Rose", serif;
+  --primary-headers-font-weight: 700;
 }
 
 .container {
@@ -37,37 +44,27 @@ body {
 
 .resume {
   margin: 50px auto;
-  border: 1px solid #f5f5f5;
-  box-shadow: 1px 1px 7px 7px #f5f5f5;
-  padding: 30px 0;
+  box-shadow: var(--border-shadow);
+  padding: 45px 35px;
   max-width: 900px;
+  background-color: var(--seconary-background-color);
 }
 
 .resume__block {
-  border-bottom: 3px solid var(--border-color);
+  border-bottom: 2px solid var(--border-color);
   padding-bottom: 30px;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-@media screen and (max-width: 576px) {
-  .main-info,
-  .contact_info_container {
-    flex-direction: column;
-  }
-
-  .contact_info_container {
-    align-items: center;
-  }
-
-  .contact-info__block:not(:last-child) {
-    margin-bottom: 20px;
-  }
-
-  .experiences {
-    margin-right: 0;
-  }
+.resume__block_left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-
 
 /* Contact info styles */
 .contact-info__header,
@@ -76,25 +73,38 @@ body {
 }
 
 .contact-info__header {
+  font-family: var(--primary-header-font-family);
   color: var(--primary-text-color);
   margin-bottom: 15px;
-  text-decoration-color: var(--text-decoration-color);
-  text-decoration-line: underline;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.contact-info__header span:first-child {
+  font-weight: normal;
+  font-size: 1.2em;
+}
+
+.contact-info__header span:last-child strong {
+  font-size: 1.8em;
 }
 
 .contact-info__sub-header {
   color: var(--secondary-text-color);
+  margin-top: -50px;
   margin-bottom: 30px;
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 22px;
 }
 
 .contact-info__block {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-.contact-info__block--center {
-  justify-content: center;
 }
 
 .contact-info__item {
@@ -105,7 +115,7 @@ body {
 }
 
 .contact-info__item:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 8px;
 }
 
 .contact-info__item-icon-wrapper {
@@ -113,6 +123,7 @@ body {
   width: 20px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .contact-info__item-icon path {
@@ -125,16 +136,11 @@ body {
 }
 
 .contact-info__avatar {
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
+  height: 350px;
   object-fit: cover;
-  border: 3px solid;
-  border-color: var(--text-decoration-color);
 }
 
-
-/* Intro and skills styles */
+/* Intro,  skills, technical skills and hobbies styles */
 .intro {
   display: flex;
   justify-content: start;
@@ -159,12 +165,18 @@ body {
 .intro_text {
   color: var(--secondary-text-color);
   text-align: justify;
+  width: 100%;
+  text-wrap: pretty;
 }
 
-.skills__header {
+.skills__header,
+.technical_skills__header,
+.hobbies__header {
   color: var(--secondary-text-color);
-  text-align: center;
+  text-align: left;
   margin-bottom: 15px;
+  text-transform: uppercase;
+  font-weight: var(--primary-headers-font-weight);
 }
 
 .skills__text {
@@ -172,6 +184,17 @@ body {
   text-align: justify;
 }
 
+.technical_skills__list,
+.hobbies__list {
+  color: var(--secondary-text-color);
+  line-height: 1.8;
+  list-style: none;
+}
+
+.technical_skills__list i,
+.hobbies__list i {
+  font-weight: 400;
+}
 
 /* Experience and additional info styles */
 .experiences {
@@ -183,6 +206,8 @@ body {
   color: var(--secondary-text-color);
   text-align: left;
   margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: var(--primary-headers-font-weight);
 }
 
 .experiences__company-header-durability {
@@ -194,14 +219,10 @@ body {
 
 .experiences__company-header-name {
   color: var(--primary-text-color);
-  text-decoration-color: var(--text-decoration-color);
-  text-decoration-line: underline;
   text-align: left;
-  margin-bottom: 20px;
 }
 
 .experiences__company-project {
-  margin-left: 15px;
   margin-bottom: 25px;
 }
 
@@ -212,15 +233,14 @@ body {
   font-size: 15px;
 }
 
-.experiences__company-project-name {
-  color: var(--primary-text-color);
-  text-align: left;
-  margin-bottom: 10px;
+.experiences__company-project-responsibilities {
+  margin-top: 10px;
+  color: var(--secondary-text-color);
+  list-style: none;
 }
 
-.experiences__company-project-responsibilities {
-  color: var(--secondary-text-color);
-  padding-left: 20px;
+.experiences__company-project-responsibilities li {
+  margin-bottom: 10px;
 }
 
 .additional-info {
@@ -235,6 +255,8 @@ body {
   color: var(--secondary-text-color);
   text-align: left;
   margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: var(--primary-headers-font-weight);
 }
 
 .additional-info__education-university-durability {
@@ -254,16 +276,53 @@ body {
   color: var(--secondary-text-color);
 }
 
-.additional-info__languages {
-  margin-bottom: 20px;
-}
-
 .additional-info__languages-header {
   color: var(--secondary-text-color);
   text-align: left;
   margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: var(--primary-headers-font-weight);
 }
 
 .additional-info__languages-item {
   color: var(--secondary-text-color);
+}
+
+/* Media */
+
+@media screen and (width <= 576px) {
+  .main-info,
+  .contact_info_container {
+    flex-direction: column;
+  }
+
+  .resume__block {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .contact_info_container {
+    align-items: center;
+  }
+
+  .contact-info__header span:first-child {
+    font-size: 1em;
+  }
+
+  .contact-info__header span:last-child strong {
+    font-size: 1.3em;
+  }
+
+  .contact-info__sub-header {
+  margin-top: 20px;
+  font-size: 1em;
+}
+
+  .contact-info__block:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .experiences {
+    margin-right: 0;
+  }
 }
