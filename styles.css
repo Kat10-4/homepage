@@ -22,7 +22,7 @@ body {
   --border-shadow:
     0 10px 20px rgba(0, 0, 0, 0.08), 0 6px 6px rgba(0, 0, 0, 0.1);
   --primary-header-font-family: "Red Rose", serif;
-  --primary-headers-font-weight:700;
+  --primary-headers-font-weight: 700;
 }
 
 .container {
@@ -214,7 +214,7 @@ body {
 }
 
 .technical_skills__list i,
-.hobbies__list i{
+.hobbies__list i {
   font-weight: 400;
 }
 
@@ -255,19 +255,14 @@ body {
   font-size: 15px;
 }
 
-.experiences__company-project-name {
-  color: var(--primary-text-color);
-  text-align: left;
-  margin-bottom: 10px;
-}
-
 .experiences__company-project-responsibilities {
+  margin-top: 10px;
   color: var(--secondary-text-color);
   list-style: none;
 }
 
 .experiences__company-project-responsibilities li {
-margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .additional-info {
