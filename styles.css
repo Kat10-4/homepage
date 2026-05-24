@@ -81,6 +81,19 @@ body {
 .contact-info__header {
   color: var(--primary-text-color);
   margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  line-height: 1;
+}
+
+.contact-info__header span:first-child {
+  font-weight: normal;
+  font-size: 0.8em;
+}
+
+.contact-info__header span:last-child strong {
+  font-size: 1.2em;
 }
 
 .contact-info__sub-header {
