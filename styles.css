@@ -14,11 +14,11 @@ body {
   --secondary-text-color: #020304;
   --durability-text-color: #6a737d9c;
   --icon-color: #6a737d;
-  --border-color:#2d2e30;
+  --border-color: #2d2e30;
   --text-decoration-color: #2d2e30;
   --seconary-background-color: #dadbdd;
-  --border-shadow:     0 10px 20px rgba(0, 0, 0, 0.08),
-    0 6px 6px rgba(0, 0, 0, 0.1);
+  --border-shadow:
+    0 10px 20px rgba(0, 0, 0, 0.08), 0 6px 6px rgba(0, 0, 0, 0.1);
 }
 
 .container {
@@ -41,7 +41,7 @@ body {
 
 .resume {
   margin: 50px auto;
-  box-shadow:var(--border-shadow);
+  box-shadow: var(--border-shadow);
   padding: 45px 35px;
   max-width: 900px;
   background-color: var(--seconary-background-color);
@@ -146,12 +146,8 @@ body {
 }
 
 .contact-info__avatar {
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
+  height: 350px;
   object-fit: cover;
-  border: 3px solid;
-  border-color: var(--text-decoration-color);
 }
 
 /* Intro,  skills, technical skills and hobbies styles */
