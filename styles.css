@@ -147,7 +147,7 @@ body {
   border-color: var(--text-decoration-color);
 }
 
-/* Intro and skills styles */
+/* Intro,  skills, technical skills and hobbies styles */
 .intro {
   display: flex;
   justify-content: start;
@@ -174,7 +174,9 @@ body {
   text-align: justify;
 }
 
-.skills__header {
+.skills__header,
+.technical_skills__header,
+.hobbies__header {
   color: var(--secondary-text-color);
   text-align: left;
   margin-bottom: 15px;
@@ -183,6 +185,11 @@ body {
 .skills__text {
   color: var(--secondary-text-color);
   text-align: justify;
+}
+
+.technical_skills__list,
+.hobbies__list {
+  color: var(--secondary-text-color);
 }
 
 /* Experience and additional info styles */
@@ -278,17 +285,4 @@ body {
 
 .additional-info__languages-item {
   color: var(--secondary-text-color);
-}
-
-
-/* Hobbies Block */
-.hobbies__header {
-  color: var(--secondary-text-color);
-  text-align: left;
-  margin-bottom: 15px;
-}
-
-.hobbies__text {
-  color: var(--secondary-text-color);
-  text-align: justify;
 }
