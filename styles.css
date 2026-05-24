@@ -6,7 +6,8 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 300;
   font-size: 17px;
   line-height: 1.5;
   background-color: #e2e2e2;
@@ -20,6 +21,8 @@ body {
   --seconary-background-color: #dadbdd;
   --border-shadow:
     0 10px 20px rgba(0, 0, 0, 0.08), 0 6px 6px rgba(0, 0, 0, 0.1);
+  --primary-header-font-family: "Red Rose", serif;
+  --primary-headers-font-weight:700;
 }
 
 .container {
@@ -58,7 +61,7 @@ body {
   justify-content: space-between;
 }
 
-.resume__block_left{
+.resume__block_left {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -71,9 +74,9 @@ body {
   }
 
   .resume__block {
-  flex-direction: column;
-  gap:30px
-}
+    flex-direction: column;
+    gap: 30px;
+  }
 
   .contact_info_container {
     align-items: center;
@@ -95,6 +98,7 @@ body {
 }
 
 .contact-info__header {
+  font-family: var(--primary-header-font-family);
   color: var(--primary-text-color);
   margin-bottom: 15px;
   display: flex;
@@ -126,7 +130,6 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
-
 
 .contact-info__item {
   color: var(--secondary-text-color);
@@ -194,6 +197,7 @@ body {
   text-align: left;
   margin-bottom: 15px;
   text-transform: uppercase;
+  font-weight: var(--primary-headers-font-weight);
 }
 
 .skills__text {
@@ -218,6 +222,7 @@ body {
   text-align: left;
   margin-bottom: 20px;
   text-transform: uppercase;
+  font-weight: var(--primary-headers-font-weight);
 }
 
 .experiences__company-header-durability {
@@ -271,6 +276,7 @@ body {
   text-align: left;
   margin-bottom: 20px;
   text-transform: uppercase;
+  font-weight: var(--primary-headers-font-weight);
 }
 
 .additional-info__education-university-durability {
@@ -299,6 +305,7 @@ body {
   text-align: left;
   margin-bottom: 20px;
   text-transform: uppercase;
+  font-weight: var(--primary-headers-font-weight);
 }
 
 .additional-info__languages-item {
