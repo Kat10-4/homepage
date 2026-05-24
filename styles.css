@@ -165,6 +165,8 @@ body {
 .intro_text {
   color: var(--secondary-text-color);
   text-align: justify;
+  width: 100%;
+  text-wrap: pretty;
 }
 
 .skills__header,
