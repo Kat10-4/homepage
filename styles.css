@@ -50,7 +50,7 @@ body {
 .resume__block {
   border-bottom: 2px solid var(--border-color);
   padding-bottom: 30px;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
   width: 100%;
   display: flex;
   flex-direction: row;
