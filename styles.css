@@ -20,7 +20,7 @@ body {
   --text-decoration-color: #2d2e30;
   --seconary-background-color: #dadbdd;
   --border-shadow:
-    0 10px 20px rgba(0, 0, 0, 0.08), 0 6px 6px rgba(0, 0, 0, 0.1);
+    0 10px 20px rgb(0 0 0/ 8%), 0 6px 6px rgb(0 0 0/ 10%);
   --primary-header-font-family: "Red Rose", serif;
   --primary-headers-font-weight: 700;
 }
