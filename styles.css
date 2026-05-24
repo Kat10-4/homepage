@@ -213,6 +213,11 @@ body {
   line-height: 1.8;
 }
 
+.technical_skills__list i,
+.hobbies__list i{
+  font-weight: 400;
+}
+
 /* Experience and additional info styles */
 .experiences {
   flex: 1 1 60%;
