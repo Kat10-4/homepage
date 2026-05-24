@@ -266,6 +266,10 @@ body {
   list-style: none;
 }
 
+.experiences__company-project-responsibilities li {
+margin-bottom: 10px;
+}
+
 .additional-info {
   flex: 1 1 40%;
 }
