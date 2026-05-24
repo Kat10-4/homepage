@@ -194,6 +194,7 @@ body {
 .technical_skills__list,
 .hobbies__list {
   color: var(--secondary-text-color);
+  padding-left: 20px;
 }
 
 /* Experience and additional info styles */
