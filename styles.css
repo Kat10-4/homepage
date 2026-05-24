@@ -43,6 +43,7 @@ body {
   box-shadow: 1px 1px 7px 7px #f5f5f5;
   padding: 30px 0;
   max-width: 900px;
+  background-color: var(--seconary-background-color);
 }
 
 .resume__block {
