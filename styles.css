@@ -11,7 +11,7 @@ body {
   background-color: #e2e2e2;
 
   --primary-text-color: #181820;
-  --secondary-text-color: #5c5c62;
+  --secondary-text-color: #020304;
   --durability-text-color: #6a737d9c;
   --icon-color: #6a737d;
   --border-color:#2d2e30;
@@ -85,6 +85,7 @@ body {
   flex-direction: column;
   text-align: left;
   line-height: 1;
+  text-transform: uppercase;
 }
 
 .contact-info__header span:first-child {
@@ -99,6 +100,8 @@ body {
 .contact-info__sub-header {
   color: var(--secondary-text-color);
   margin-bottom: 30px;
+  text-transform: uppercase;
+  text-align: left;
 }
 
 .contact-info__block {
@@ -180,6 +183,7 @@ body {
   color: var(--secondary-text-color);
   text-align: left;
   margin-bottom: 15px;
+  text-transform: uppercase;
 }
 
 .skills__text {
@@ -202,6 +206,7 @@ body {
   color: var(--secondary-text-color);
   text-align: left;
   margin-bottom: 20px;
+  text-transform: uppercase;
 }
 
 .experiences__company-header-durability {
@@ -254,6 +259,7 @@ body {
   color: var(--secondary-text-color);
   text-align: left;
   margin-bottom: 20px;
+  text-transform: uppercase;
 }
 
 .additional-info__education-university-durability {
@@ -281,6 +287,7 @@ body {
   color: var(--secondary-text-color);
   text-align: left;
   margin-bottom: 20px;
+  text-transform: uppercase;
 }
 
 .additional-info__languages-item {
