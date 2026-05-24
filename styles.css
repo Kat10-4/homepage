@@ -17,6 +17,8 @@ body {
   --border-color:#2d2e30;
   --text-decoration-color: #2d2e30;
   --seconary-background-color: #dadbdd;
+  --border-shadow:     0 10px 20px rgba(0, 0, 0, 0.08),
+    0 6px 6px rgba(0, 0, 0, 0.1);
 }
 
 .container {
@@ -39,9 +41,7 @@ body {
 
 .resume {
   margin: 50px auto;
-  box-shadow:
-    0 10px 20px rgba(0, 0, 0, 0.08),
-    0 6px 6px rgba(0, 0, 0, 0.1);
+  box-shadow:var(--border-shadow);
   padding: 45px 35px;
   max-width: 900px;
   background-color: var(--seconary-background-color);
